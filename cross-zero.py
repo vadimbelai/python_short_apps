@@ -64,5 +64,4 @@ def start_game(x): #начало новой игры
     logic_og_game(x)
 
 start_game(game)
-'''print_game(game)'''
 
