@@ -34,8 +34,10 @@ def x0_status(x): #определение, чей ход
     for i in range(3):
         sum_x += x[i].count('X')
         sum_0 += x[i].count('0')
-    if sum_0 > sum_x:
+    if sum_x > sum_0:
         flag = False
+    return flag
+    print(sum_x, sum_0, flag)
 
 def logic_og_game(x): #логика игры
     while not winner(x):
@@ -64,5 +66,4 @@ def start_game(x): #начало новой игры
     logic_og_game(x)
 
 start_game(game)
-'''Только для теста'''
 
